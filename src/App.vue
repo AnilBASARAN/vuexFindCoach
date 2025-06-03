@@ -1,16 +1,28 @@
 <template>
-  <div class="titleMe">
-    <h2>Coach Finder APP</h2>
+  <div>
+    <the-header></the-header>
+    <router-view></router-view>
   </div>
-  <router-view></router-view>
 </template>
+<script>
+import TheHeader from './layout/TheHeader.vue';
+
+export default {
+  components: { TheHeader },
+};
+</script>
 <style scoped>
-.titleMe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: gainsboro;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
 }
 </style>
