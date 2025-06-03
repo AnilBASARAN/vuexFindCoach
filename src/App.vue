@@ -1,7 +1,8 @@
 <template>
   <div class="titleMe">
-    <h2>Hey dude</h2>
+    <h2>Coach Finder APP</h2>
   </div>
+  <router-view></router-view>
 </template>
 <style scoped>
 .titleMe {
