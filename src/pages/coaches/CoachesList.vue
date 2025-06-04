@@ -20,7 +20,7 @@ export default {
       return this.$store.getters['coaches/coaches'];
     },
     hasCoaches() {
-      return this.$store.getters['coaches/hascoaches'];
+      return this.$store.getters['coaches/hasCoaches'];
     },
   },
 };
