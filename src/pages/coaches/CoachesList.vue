@@ -8,6 +8,7 @@
     <ul v-if="hasCoaches">
       <coach-item
         v-for="coach in filteredCoaches"
+        :id="coach.id"
         :key="coach.id"
         :first-name="coach.firstName"
         :last-name="coach.lastName"
